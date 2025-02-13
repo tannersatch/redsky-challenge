@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --font-sans: Montserrat, sans-serif;
+  --font-serif: Marcellus, serif;
+
+  --color-primary: #dd013f;
+  --color-secondary: #081430;
+  --color-white: #ffffff;
+  --color-gray: #d3d3d3;
+  --color-opaque: #08143099;
+}
+
+h1 {
+  @apply font-serif;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: normal;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+h2 {
+  @apply font-sans;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: semibold;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+h3 {
+  @apply font-sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: semibold;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+body {
+  @apply font-sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  color: var(--color-secondary);
+  letter-spacing: 0px;
+}
+
+button {
+  @apply font-sans;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: semibold;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding-top: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  height: 36px;
+  cursor: pointer;
+}
+
+hr {
+  border-color: var(--color-gray);
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--color-gray);
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}

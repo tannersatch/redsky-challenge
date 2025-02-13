@@ -16,10 +16,6 @@
 <style>
 	@import 'tailwindcss/theme';
 	.content {
-		align-self: center;
-		max-width: 972px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+		@apply flex w-full max-w-[972px] flex-col self-center;
 	}
 </style>

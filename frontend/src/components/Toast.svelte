@@ -35,38 +35,22 @@
 <style>
 	@import 'tailwindcss/theme';
 	.toast-wrapper {
-		position: fixed;
-		left: 0;
-		right: 0;
-		top: 0;
-		margin: 5% auto;
-		width: 672px;
-		display: flex;
-		flex-direction: column;
-		z-index: 1;
+		@apply fixed inset-x-0 top-0 z-10 mx-auto mb-5 mt-5 flex w-[672px] flex-col;
 	}
+
 	.toast {
-		display: flex;
-		flex-direction: row;
-		background-color: var(--color-white);
-		margin-bottom: 10px;
-		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-		border: 1px solid var(--color-primary);
+		@apply border-(--color-primary) mb-10 flex flex-row border bg-white shadow-md;
 	}
+
 	.title {
-		display: flex;
-		background-color: var(--color-primary);
-		padding: 24px;
+		@apply bg-(--color-primary) p-6;
 	}
+
 	.content {
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex-grow: 1;
+		@apply flex flex-grow flex-col justify-center p-5;
 	}
+
 	.actions {
-		padding: 20px;
-		align-self: center;
+		@apply self-center p-5;
 	}
 </style>

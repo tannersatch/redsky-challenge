@@ -18,68 +18,29 @@
 }
 
 h1 {
-  @apply font-serif;
-  font-size: 48px;
-  line-height: 58px;
-  font-weight: normal;
-  color: var(--color-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0px;
+  @apply font-(family-name:--font-serif) text-[48px] leading-[58px] font-normal uppercase text-(--color-secondary);
 }
 
 h2 {
-  @apply font-sans;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: semibold;
-  color: var(--color-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0px;
+  @apply font-(family-name:--font-sans) text-[24px] leading-[29px] font-semibold uppercase text-(--color-secondary);
 }
 
 h3 {
-  @apply font-sans;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: semibold;
-  color: var(--color-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0px;
+  @apply font-(family-name:--font-sans) text-[18px] leading-[20px] font-semibold uppercase text-(--color-secondary);
 }
 
 body {
-  @apply font-sans;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: normal;
-  color: var(--color-secondary);
-  letter-spacing: 0px;
+  @apply font-(family-name:--font-sans) text-[18px] leading-[20px] font-normal text-(--color-secondary);
 }
 
 button {
-  @apply font-sans;
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: semibold;
-  color: var(--color-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  padding-top: 10px;
-  padding-right: 18px;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  height: 36px;
-  cursor: pointer;
+  @apply font-(family-name:--font-sans) text-[18px] leading-[16px] font-semibold uppercase text-(--color-secondary) py-2.5 px-4.5 h-9 cursor-pointer;
 }
 
 hr {
-  border-color: var(--color-gray);
+  @apply border-(--color-gray);
 }
 
 input {
-  width: 100%;
-  border: 1px solid var(--color-gray);
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  @apply w-full border border-(--color-gray) p-1.25 mt-1.25 mb-3.75;
 }

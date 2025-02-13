@@ -37,15 +37,11 @@
 <style>
 	@import 'tailwindcss/theme';
 	table {
-		border: 1px solid var(--color-primary);
+		@apply border-(--color-primary) border;
 	}
+
 	th,
 	td {
-		white-space: nowrap;
-		text-align: left;
-		padding-left: 16px;
-		padding-right: 16px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		@apply whitespace-nowrap px-[16px] py-[9px] text-left;
 	}
 </style>

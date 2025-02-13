@@ -13,15 +13,11 @@
 </div>
 
 <style>
+	@import 'tailwindcss/theme';
 	.table-title {
-		background-color: var(--color-primary);
-		width: '100%';
-		padding-left: 16px;
-		padding-right: 16px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		@apply bg-(--color-primary) w-full p-[4px] pb-[9px] pl-[16px] pr-[16px] pt-[9px];
 		h2 {
-			color: var(--color-white);
+			@apply text-white;
 		}
 	}
 </style>

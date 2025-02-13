@@ -27,34 +27,21 @@
 <style>
 	@import 'tailwindcss/theme';
 	.background {
-		position: fixed;
-		z-index: 1;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		background-color: var(--color-opaque);
+		@apply bg-(--color-opaque) fixed inset-0 z-10;
 	}
+
 	.popup {
-		background-color: var(--color-white);
-		margin: 5% auto;
-		width: 672px;
-		height: 563px;
-		display: flex;
-		flex-direction: column;
+		@apply mx-auto mb-5 mt-5 flex h-[563px] w-[672px] flex-col bg-white;
 	}
+
 	.title {
-		display: flex;
-		background-color: var(--color-primary);
-		padding: 24px;
+		@apply bg-(--color-primary) flex p-6;
 		h2 {
-			color: var(--color-white);
+			@apply text-white;
 		}
 	}
+
 	.content {
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
+		@apply flex flex-grow flex-col p-5;
 	}
 </style>

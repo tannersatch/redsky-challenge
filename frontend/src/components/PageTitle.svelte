@@ -18,9 +18,9 @@
 <style>
 	@import 'tailwindcss/theme';
 	h1 {
-		margin-top: 100px;
+		@apply mt-[100px];
 	}
 	hr {
-		margin-bottom: 36px;
+		@apply mb-[36px];
 	}
 </style>

@@ -27,19 +27,16 @@
 </tr>
 
 <style>
+	@import 'tailwindcss/theme';
 	img {
-		width: 40px;
-		height: 40px;
+		@apply h-10 w-10;
 	}
+
 	td:first-child {
-		display: flex;
-		justify-content: center;
+		@apply flex justify-center;
 	}
+
 	td {
-		border-top: 1px solid var(--color-gray);
-		padding-left: 16px;
-		padding-right: 16px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		@apply border-(--color-gray) border-t p-[4px] pb-[9px] pl-[16px] pr-[16px] pt-[9px];
 	}
 </style>

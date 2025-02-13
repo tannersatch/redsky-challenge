@@ -16,7 +16,6 @@
 	@import 'tailwindcss/theme';
 
 	div {
-		display: flex;
-		gap: 10px;
+		@apply flex flex-row justify-end gap-[10px];
 	}
 </style>

@@ -18,15 +18,10 @@
 <style>
 	@import 'tailwindcss/theme';
 	.wrapper {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
+		@apply flex min-h-screen flex-col items-center;
 	}
+
 	.container {
-		max-width: 1072px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+		@apply flex w-full max-w-[1072px] flex-col;
 	}
 </style>

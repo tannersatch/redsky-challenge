@@ -31,26 +31,22 @@
 	@import 'tailwindcss/theme';
 
 	button.size-small {
-		width: 138px;
+		@apply w-[138px];
 	}
 
 	button.size-large {
-		width: 226px;
+		@apply w-[226px];
 	}
 
 	button.size-fit {
-		width: fit-content;
-		padding-left: 8px;
-		padding-right: 8px;
+		@apply w-fit pl-[8px] pr-[8px];
 	}
 
 	button.mode-solid {
-		@apply bg-[var(--color-primary)] text-white;
+		@apply bg-(--color-primary) text-white;
 	}
 
 	button.mode-outline {
-		@apply bg-white text-[var(--color-primary)];
-		border-width: 2px;
-		border-color: var(--color-primary);
+		@apply text-(--color-primary) border-(--color-primary) border-2 bg-white;
 	}
 </style>
